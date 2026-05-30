@@ -806,7 +806,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     cardPopoverError.textContent = '';
     cardTitleInput.value = '';
     cardBodyInput.value = '';
-    cardMetaInput.value = gridId === 'services-grid' ? 'from $99' : 'Guide';
+    cardMetaInput.value = gridId === 'services-grid' ? 'from $39' : 'Guide';
     cardCtaInput.value = gridId === 'services-grid' ? 'Book now' : 'Read more';
     cardHrefInput.value = 'https://t.me/pathwayglobal_admin';
     positionPopover(cardPopover, anchorElement);
