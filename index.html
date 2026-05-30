@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PathWay Global — Your path to a university abroad</title>
+  <meta name="description" content="We know the admissions systems for China, UK, USA, Turkey, and Arab universities. You get honest guidance, not generic advice.">
+  <meta property="og:title" content="PathWay Global — Your path to a university abroad">
+  <meta property="og:description" content="We know the admissions systems for China, UK, USA, Turkey, and Arab universities. You get honest guidance, not generic advice.">
+  <meta property="og:type" content="website">
+  <!-- TODO: replace with the final Netlify URL after deploy -->
+  <meta property="og:url" content="https://pathwayglobaluz.netlify.app">
+  <meta property="og:image" content="/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>
+    (function () {
+      window.pwgImageError = function (img) {
+        if (!img) return;
+        if (!img.dataset.fallbackApplied && img.dataset.backupSrc) {
+          img.dataset.fallbackApplied = '1';
+          img.src = img.dataset.backupSrc;
+          return;
+        }
+        var alt = encodeURIComponent(img.alt || 'Image unavailable');
+        img.src = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23CBD5E1'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%230F172A' font-family='Inter, Arial, sans-serif' font-size='32'%3E" + alt + "%3C/text%3E%3C/svg%3E";
+        img.classList.add('image-fallback');
+      };
+      try {
+        var saved = localStorage.getItem('pwg-theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo" aria-label="Home">
+        PathWay Global
+        <svg class="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+      </a>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <svg class="theme-icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="theme-icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3c0 .25 0 .5.02.74A7 7 0 0 0 20.26 12c.24.01.49.02.74.02z"></path></svg>
+        </button>
+        <a href="https://t.me/pathwayglobal_admin" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Book a Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero" data-section-id="hero" data-section-label="Hero">
+    <div class="grain-overlay"></div>
+    <div class="container hero-shell fade-in">
+      <div class="hero-content">
+      <h1 data-edit-id="hero-headline">Your path to a university abroad. Without the guesswork.</h1>
+      <p class="hero-sub" data-edit-id="hero-sub">We know the admissions systems for China, UK, USA, Turkey, and Arab universities. You get honest guidance, not generic advice.</p>
+      
+      <div class="hero-actions">
+        <a href="https://t.me/pathwayglobal_admin" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><span data-edit-id="hero-cta-primary">Book an Application Review</span></a>
+        <a href="#resources" class="btn btn-text"><span data-edit-id="hero-cta-secondary">Browse Resources &rarr;</span></a>
+      </div>
+      
+      <div class="social-proof">
+        <p data-edit-id="hero-proof">Trusted by students applying to China, UK, USA, Turkey & more</p>
+        <div class="flags">
+          <svg viewBox="0 0 36 24" width="24" height="16"><rect width="36" height="24" fill="#EE1C25"/><path fill="#FFDF00" d="M6 3l1.8 5.5H14l-5 3.6 1.9 5.5-4.9-3.6-4.9 3.6 1.9-5.5-5-3.6h6.2z"/></svg>
+          <svg viewBox="0 0 36 24" width="24" height="16"><rect width="36" height="24" fill="#012169"/><path fill="#FFF" d="M0 0l36 24M36 0L0 24" stroke="#FFF" stroke-width="4"/><path fill="#C8102E" d="M0 0l36 24M36 0L0 24" stroke="#C8102E" stroke-width="2"/><path fill="#FFF" d="M15 0v24h6V0zM0 9h36v6H0z"/><path fill="#C8102E" d="M16.5 0v24h3V0zM0 10.5h36v3H0z"/></svg>
+          <svg viewBox="0 0 36 24" width="24" height="16"><rect width="36" height="24" fill="#B22234"/><path fill="#FFF" d="M0 2.4h36v2.4H0zm0 4.8h36v2.4H0zm0 4.8h36v2.4H0zm0 4.8h36v2.4H0z"/><rect width="16" height="12.8" fill="#3C3B6E"/></svg>
+          <svg viewBox="0 0 36 24" width="24" height="16"><rect width="36" height="24" fill="#E30A17"/><circle cx="12" cy="12" r="6" fill="#FFF"/><circle cx="13.5" cy="12" r="5" fill="#E30A17"/><polygon fill="#FFF" points="19,12 16,10.5 17.5,13.5 14.5,12.5 17,11" transform="rotate(20 17.5 12)"/></svg>
+          <svg viewBox="0 0 36 24" width="24" height="16"><rect width="36" height="24" fill="#006C35"/><rect y="8" width="36" height="8" fill="#FFF"/><rect y="16" width="36" height="8" fill="#000"/><polygon fill="#CE1126" points="0,0 12,12 0,24"/></svg>
+        </div>
+      </div>
+      </div>
+      <figure class="hero-photo">
+        <img class="managed-image" data-image-id="hero-image" src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=1200&q=80&auto=format&fit=crop" data-backup-src="https://images.unsplash.com/photo-1503676382389-4809596d5290?w=1200&q=80&auto=format&fit=crop" onerror="window.pwgImageError && window.pwgImageError(this)" alt="Student walking through a university campus pathway" loading="lazy" decoding="async" width="800" height="1000">
+      </figure>
+      <div class="stats-card">
+        <p data-edit-id="hero-stats">12 guides written &middot; 5 countries covered &middot; Students from Uzbekistan, Kazakhstan & beyond</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section" data-section-id="services" data-section-label="Services">
+    <div class="container">
+      <h2 class="section-title fade-in" data-edit-id="services-title">Our Services</h2>
+      <div class="grid-3 managed-grid" data-grid-id="services-grid" data-grid-label="Services cards">
+        <!-- Service 1 -->
+        <div class="card service-card fade-in" data-card-id="service-card-1" data-card-kind="service">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><polyline points="9 15 11 17 15 13"></polyline></svg>
+          <h3 data-edit-id="service1-title">Application Review</h3>
+          <p data-edit-id="service1-copy">We go through your university shortlist, motivation letter, and scholarship strategy. Written feedback in 48 hours.</p>
+          <div class="card-footer">
+            <span class="price" data-edit-id="service1-price">from $99</span>
+            <a href="https://t.me/pathwayglobal_admin" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><span data-edit-id="service1-cta">Book Now</span></a>
+          </div>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="card service-card fade-in" data-card-id="service-card-2" data-card-kind="service">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <img class="service-image managed-image" data-image-id="service2-image" src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=1200&q=80&auto=format&fit=crop" data-backup-src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=1200&q=80&auto=format&fit=crop" onerror="window.pwgImageError && window.pwgImageError(this)" alt="Classical Chinese university architecture in daylight" loading="lazy" decoding="async" width="1200" height="700">
+          <h3 data-edit-id="service2-title">China Admissions Guide</h3>
+          <p data-edit-id="service2-copy">12 documents, 1000+ pages. Rankings, scholarship directories, university guides, admissions steps. Everything in one bundle.</p>
+          <div class="card-footer">
+            <span class="price" data-edit-id="service2-price">$49.98</span>
+            <a href="https://t.me/pathwayglobal_admin" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><span data-edit-id="service2-cta">Get the Pack</span></a>
+          </div>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="card service-card fade-in" data-card-id="service-card-3" data-card-kind="service">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="7" r="4"></circle><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><polyline points="16 11 18 13 22 9"></polyline></svg>
+          <h3 data-edit-id="service3-title">Full Application Consulting</h3>
+          <p data-edit-id="service3-copy">End-to-end support — country selection, university shortlist, documents, submission. For students who want someone in their corner the whole way.</p>
+          <div class="card-footer">
+            <span class="tag price" data-edit-id="service3-price">Coming soon</span>
+            <a href="https://t.me/pathwayglobal_admin" target="_blank" rel="noopener noreferrer" class="btn btn-text btn-sm"><span data-edit-id="service3-cta">Join Waitlist &rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section id="about" class="section section-light" data-section-id="about" data-section-label="Trust">
+    <div class="container grid-2 fade-in">
+      <div class="about-text">
+        <h2 class="section-title" data-edit-id="about-title">Why PathWay Global</h2>
+        <p class="lead" data-edit-id="about-copy">PathWay Global isn't a recruitment agency. We don't get paid by universities. We started this because the admissions process for students in Central Asia is genuinely confusing — and most of the information out there is wrong, vague, or outdated. We've been through it. We know what works.</p>
+        <figure class="about-photo">
+          <img class="managed-image" data-image-id="about-image" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80&auto=format&fit=crop" data-backup-src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80&auto=format&fit=crop" onerror="window.pwgImageError && window.pwgImageError(this)" alt="Study desk with notebooks, books, and handwritten planning notes" loading="lazy" decoding="async" width="1200" height="800">
+        </figure>
+      </div>
+      <div class="about-checks">
+        <div class="check-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span data-edit-id="about-check-1">Founded by someone who applied and won scholarships personally</span>
+        </div>
+        <div class="check-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span data-edit-id="about-check-2">Covers China, UK, USA, Turkey, Arab countries</span>
+        </div>
+        <div class="check-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span data-edit-id="about-check-3">No fluff — specific, actionable feedback only</span>
+        </div>
+        <div class="check-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span data-edit-id="about-check-4">Written resources built from scratch, not copied</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section id="resources" class="section" data-section-id="resources" data-section-label="Resources">
+    <div class="container">
+      <h2 class="section-title fade-in" data-edit-id="resources-title">Resources</h2>
+      <div class="grid-res managed-grid" data-grid-id="resources-grid" data-grid-label="Resources cards">
+        <article class="resource-card fade-in" data-card-id="resource-card-1" data-card-kind="resource">
+          <span class="tag">Article</span>
+          <h4 data-edit-id="resource-1-title">C9 vs Double First Class — which should you target?</h4>
+          <p data-edit-id="resource-1-copy">Understand the tiers of Chinese universities.</p>
+          <a href="https://t.me/PathWayGlobal" target="_blank" rel="noopener noreferrer" class="resource-link"><span data-edit-id="resource-1-cta">Read on Telegram</span> <span class="arrow">&rarr;</span></a>
+        </article>
+        <article class="resource-card fade-in" data-card-id="resource-card-2" data-card-kind="resource">
+          <span class="tag tag-paid">Premium Guide</span>
+          <h4 data-edit-id="resource-2-title">Full China Scholarship Directory</h4>
+          <p data-edit-id="resource-2-copy">Complete directory of available scholarships and deadlines.</p>
+          <a href="https://t.me/pathwayglobal_admin" target="_blank" rel="noopener noreferrer" class="resource-link"><span data-edit-id="resource-2-cta">Ask for access</span> <span class="arrow">&rarr;</span></a>
+        </article>
+        <article class="resource-card fade-in" data-card-id="resource-card-3" data-card-kind="resource">
+          <span class="tag">Guide</span>
+          <h4 data-edit-id="resource-3-title">How CSC Scholarship selection actually works</h4>
+          <p data-edit-id="resource-3-copy">Behind the scenes of the Chinese Government Scholarship.</p>
+          <a href="https://t.me/PathWayGlobal" target="_blank" rel="noopener noreferrer" class="resource-link"><span data-edit-id="resource-3-cta">Read on Telegram</span> <span class="arrow">&rarr;</span></a>
+        </article>
+        <article class="resource-card fade-in" data-card-id="resource-card-4" data-card-kind="resource">
+          <span class="tag">Reference</span>
+          <h4 data-edit-id="resource-4-title">University tier guide: 985, 211, Double First Class explained</h4>
+          <p data-edit-id="resource-4-copy">Decoding the Chinese higher education designations.</p>
+          <a href="https://t.me/PathWayGlobal" target="_blank" rel="noopener noreferrer" class="resource-link"><span data-edit-id="resource-4-cta">Open guide</span> <span class="arrow">&rarr;</span></a>
+        </article>
+      </div>
+      <div class="more-resources fade-in">
+        <p data-edit-id="resources-more">More resources on our Telegram channel &rarr;</p>
+        <a href="https://t.me/PathWayGlobal" target="_blank" rel="noopener noreferrer" class="social-link-inline">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.97-.64-.34-1 .22-1.58.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.06-.2-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          @PathWayGlobal
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials (Hidden per instructions) -->
+  <!-- 
+  <section id="testimonials" class="section section-light" style="display: none;">
+    <div class="container">
+      <h2 class="section-title">Success Stories</h2>
+      <div class="grid-3">
+        <div class="testimonial-card">
+          <blockquote>"The guidance was incredibly precise. I got into my top choice in China with a full CSC scholarship."</blockquote>
+          <div class="author-info">
+            <strong>Azizbek K.</strong>
+            <span>Uzbekistan &middot; Tsinghua University</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- Contact -->
+  <section id="contact" class="section section-dark" data-section-id="contact" data-section-label="Contact">
+    <div class="container text-center fade-in">
+      <h2 data-edit-id="contact-title">Ready to get started?</h2>
+      <div class="contact-buttons">
+        <a href="https://t.me/pathwayglobal_admin" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.97-.64-.34-1 .22-1.58.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.06-.2-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          <span data-edit-id="contact-telegram">@pathwayglobal_admin</span>
+        </a>
+        <a href="https://instagram.com/path.way.global" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-large">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span data-edit-id="contact-instagram">@path.way.global</span>
+        </a>
+      </div>
+      <p class="mt-4 opacity-75" data-edit-id="contact-response">We respond within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">PathWay Global</a>
+        <p data-edit-id="footer-tagline">Honest guidance for students applying abroad.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://t.me/PathWayGlobal" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.97-.64-.34-1 .22-1.58.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.06-.2-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg></a>
+        <a href="https://instagram.com/path.way.global" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+      </div>
+    </div>
+    <div class="container footer-admin-row">
+      <button id="admin-link" class="admin-link" type="button">Admin</button>
+    </div>
+    <div class="container copyright">
+      &copy; 2026 PathWay Global. All rights reserved.
+    </div>
+  </footer>
+
+  <div id="admin-banner" class="admin-banner" hidden>
+    <span>Editing mode · Save publishes live for everyone. Auth is handled by Supabase.</span>
+    <div class="admin-banner-actions">
+      <button id="admin-save" type="button">Save</button>
+      <button id="admin-signout" type="button">Sign out</button>
+    </div>
+  </div>
+
+  <p id="auth-status-message" class="auth-status-message" aria-live="polite"></p>
+
+  <div id="admin-modal" class="admin-modal" hidden>
+    <div class="admin-modal-backdrop" data-close-admin-modal="true"></div>
+    <div class="admin-dialog" role="dialog" aria-modal="true" aria-labelledby="admin-modal-title">
+      <h2 id="admin-modal-title">Admin sign in</h2>
+      <div class="auth-tabs" role="tablist" aria-label="Authentication mode">
+        <button id="auth-tab-signin" class="auth-tab is-active" type="button" role="tab" aria-selected="true">Sign in</button>
+        <button id="auth-tab-signup" class="auth-tab" type="button" role="tab" aria-selected="false">Sign up</button>
+      </div>
+      <form id="admin-form" novalidate>
+        <label for="admin-email">Email</label>
+        <input id="admin-email" name="email" type="email" autocomplete="username" required>
+        <label for="admin-password">Password</label>
+        <div class="password-row">
+          <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+          <button id="toggle-password" type="button" class="password-toggle" aria-label="Show password">Show</button>
+        </div>
+        <div class="auth-helper-row">
+          <button id="forgot-password" type="button" class="auth-text-btn">Forgot password?</button>
+          <span id="auth-mode-copy" class="auth-mode-copy">Use your admin email and password to sign in.</span>
+        </div>
+        <p id="admin-error" class="admin-error" aria-live="polite"></p>
+        <div class="admin-modal-actions">
+          <button id="admin-submit" type="submit" class="btn btn-primary">Sign in</button>
+          <button type="button" class="btn btn-text" data-close-admin-modal="true">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <aside id="admin-panel" class="admin-panel" hidden>
+    <button id="admin-panel-toggle" class="admin-panel-toggle" type="button" aria-expanded="true">
+      <span>Design admin</span>
+      <span class="chevron">⌄</span>
+    </button>
+    <div id="admin-panel-body" class="admin-panel-body">
+      <p class="admin-note">Save publishes live for everyone through Supabase. Local storage remains as offline fallback.</p>
+      <section class="admin-panel-section">
+        <h3>Text & Images</h3>
+        <p>Click text to edit. Click images to swap their URL. Prices are editable too.</p>
+      </section>
+      <section class="admin-panel-section">
+        <h3>Sections</h3>
+        <div id="admin-sections-list" class="admin-list"></div>
+      </section>
+      <section class="admin-panel-section">
+        <h3>Cards</h3>
+        <div id="admin-grids-list" class="admin-list"></div>
+      </section>
+      <section class="admin-panel-section">
+        <h3>Add section</h3>
+        <div class="template-buttons">
+          <button type="button" class="admin-secondary-btn" data-add-section-template="text-image">Text + image</button>
+          <button type="button" class="admin-secondary-btn" data-add-section-template="heading-paragraph">Heading + paragraph</button>
+          <button type="button" class="admin-secondary-btn" data-add-section-template="card-grid">Card grid</button>
+          <button type="button" class="admin-secondary-btn" data-add-section-template="cta-band">Call-to-action band</button>
+        </div>
+      </section>
+      <button id="admin-reset" type="button" class="admin-danger-btn">Reset all changes</button>
+    </div>
+  </aside>
+
+  <div id="image-popover" class="editor-popover" hidden>
+    <h3>Update image</h3>
+    <label for="image-url-input">Image URL</label>
+    <input id="image-url-input" type="url" placeholder="https://images.unsplash.com/...">
+    <p id="image-popover-error" class="admin-error" aria-live="polite"></p>
+    <div class="editor-popover-actions">
+      <button id="image-apply" type="button" class="btn btn-primary">Apply</button>
+      <button id="image-cancel" type="button" class="btn btn-text">Cancel</button>
+    </div>
+  </div>
+
+  <div id="link-popover" class="editor-popover" hidden>
+    <h3>Edit card link</h3>
+    <label for="link-url-input">Link URL</label>
+    <input id="link-url-input" type="url" placeholder="https://">
+    <p id="link-popover-error" class="admin-error" aria-live="polite"></p>
+    <div class="editor-popover-actions">
+      <button id="link-apply" type="button" class="btn btn-primary">Apply</button>
+      <button id="link-cancel" type="button" class="btn btn-text">Cancel</button>
+    </div>
+  </div>
+
+  <div id="card-popover" class="editor-popover" hidden>
+    <h3>Add card</h3>
+    <label for="card-title-input">Headline</label>
+    <input id="card-title-input" type="text">
+    <label for="card-body-input">Body</label>
+    <textarea id="card-body-input" rows="4"></textarea>
+    <label for="card-meta-input">Price or tag</label>
+    <input id="card-meta-input" type="text" placeholder="from $99 / Article / Coming soon">
+    <label for="card-cta-input">CTA label</label>
+    <input id="card-cta-input" type="text" placeholder="Read more">
+    <label for="card-href-input">CTA URL</label>
+    <input id="card-href-input" type="url" placeholder="https://">
+    <p id="card-popover-error" class="admin-error" aria-live="polite"></p>
+    <div class="editor-popover-actions">
+      <button id="card-apply" type="button" class="btn btn-primary">Add card</button>
+      <button id="card-cancel" type="button" class="btn btn-text">Cancel</button>
+    </div>
+  </div>
+
+  <div id="admin-toast" class="admin-toast" hidden>Saved</div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
